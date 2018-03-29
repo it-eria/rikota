@@ -5,6 +5,41 @@
 //= vendors/owl.carousel.min.js
 //= vendors/aos.js
 
+var didScroll;
+var lastScrollTop = 100;
+var delta = 5;
+var navbarHeight = $('#navb').outerHeight();
+
+$(window).scroll(function (event) {
+    didScroll = true;
+});
+
+setInterval(function () {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+
+    if (Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    if (st > lastScrollTop && st > navbarHeight) {
+
+        $('#navb').removeClass('menu-scroll').addClass('nav-up');
+    } else {
+
+        if (st + $(window).height() < $(document).height()) {
+            $('#navb').removeClass('nav-up').addClass('menu-scroll');
+        }
+    }
+
+    lastScrollTop = st;
+}
+
 $(function(){
     var $searchlink = $('#searchtoggl i');
     var $searchbar  = $('#searchbar');
@@ -177,4 +212,12 @@ $(document).ready(function($){
 
 AOS.init({
     duration: 1200
+});
+
+
+$('.before-after-slider').slick({
+    infinite: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000
 });
