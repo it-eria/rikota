@@ -381,7 +381,11 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
 
   .content-block img {
     float: none !important;
-    margin: 0 0 20px 0 !important;
+    margin: 0 20px 20px 20px !important;
+  }
+
+  .shift-image {
+    float: none !important;
   }
 
 }
@@ -1335,7 +1339,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
   display: none;
   float: left;
   width: 100%;
-  height: 50px;
+  height: auto;
   border-bottom: 1px solid #c39e47;
   padding-left: 25px;
   padding-right: 10px;
@@ -1600,6 +1604,19 @@ a.plug {
     }
   }
 
+  .content-block img {
+    float: none !important;
+    margin: 0 0px 20px 0px !important;
+  }
+
+  .small-image_block {
+    display: none;
+  }
+
+  .shift-image {
+    padding-left: 0 !important;
+  }
+
   .before-after-slider div img {
     height: 160px
   }
@@ -1819,4 +1836,34 @@ a.plug {
 
 .svg-inline--fa.fa-w-12 {
   width: 20px;
+}
+
+.shift-image {
+  margin-right: 0;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .small-image_block {
+    background: #4b81d3;
+    width: 150px;
+    height: 150px;
+    padding: 20px 0;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    -webkit-box-shadow: 0 10px 30px rgba(0,1,1,.2);
+    box-shadow: 0 10px 30px rgba(0,1,1,.2);
+
+    img {
+      max-width: 100px;
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+    }
+  }
 }
