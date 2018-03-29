@@ -406,7 +406,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
     width: 85%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    z-index: 3;
+    z-index: 999;
     font-size: 16px;
     box-shadow: 0 3px 5px #ccc;
     opacity: 0;
@@ -547,7 +547,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
 .header-container {
   padding: 5px 0;
   box-shadow: 0 0 3px #ccc;
-
+  display: inline;
 }
 
 .description-container {
