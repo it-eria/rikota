@@ -4,6 +4,10 @@
 //= vendors/fontawesome-all.min.js
 //= vendors/owl.carousel.min.js
 //= vendors/aos.js
+//= vendors/jquery.animateNumber.min.js
+
+
+
 
 var didScroll;
 var lastScrollTop = 100;
@@ -88,7 +92,7 @@ $(function() {
 });
 
 $('.achievement-slider').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -214,6 +218,9 @@ AOS.init({
     duration: 1200
 });
 
+$('#count1').animateNumber({ number: 28 }, 3000);
+$('#count2').animateNumber({ number: 9 }, 4000);
+$('#count3').animateNumber({ number: 18500 }, 6000);
 
 $('.before-after-slider').slick({
     infinite: true,
@@ -225,3 +232,6 @@ $('.before-after-slider').slick({
 $("#search-item").on("click", function(){
     $(this).find($("#searchtoggl svg")).toggleClass('fa-times').toggleClass('fa-search');
 });
+
+
+
