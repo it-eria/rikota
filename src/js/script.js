@@ -221,3 +221,7 @@ $('.before-after-slider').slick({
     autoplay: true,
     autoplaySpeed: 2000
 });
+
+$("#search-item").on("click", function(){
+    $(this).find($("#searchtoggl svg")).toggleClass('fa-times').toggleClass('fa-search');
+});

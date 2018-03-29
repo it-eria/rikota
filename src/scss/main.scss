@@ -379,6 +379,11 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
     }
   }
 
+  .content-block img {
+    float: none !important;
+    margin: 0 0 20px 0 !important;
+  }
+
 }
 
 @media only screen and (min-width: 1201px) {
@@ -1595,6 +1600,10 @@ a.plug {
     }
   }
 
+  .before-after-slider div img {
+    height: 160px
+  }
+
   .popup-input>input {
     width: 69%;
     font-size: 16px;
@@ -1633,7 +1642,7 @@ a.plug {
 }
 
 .breadcrumbs-container {
-  padding: 5% 0;
+  padding: 90px 0 0;
   .breadcrumbs {
     li {
       list-style-type: none;
@@ -1669,7 +1678,7 @@ a.plug {
 
 
 .service-description-container {
-  padding: 5% 0;
+  padding: 3% 0;
   .content-block {
     h1 {
       color: #222;
@@ -1697,13 +1706,14 @@ a.plug {
 }
 
 .before-after-container {
-  padding: 5% 0;
+  padding: 2% 0;
   .before-after-slider {
     div {
       display: flex;
       justify-content: center;
       img {
-
+        width: 100%;
+        object-fit: contain;
       }
     }
   }
@@ -1716,7 +1726,7 @@ a.plug {
 }
 
 .service-price-container {
-  padding: 5% 0;
+  padding: 2% 0;
   p {
     color: #222;
     font-weight: 300;
@@ -1757,4 +1767,56 @@ a.plug {
       }
     }
   }
+}
+
+.kind-of-service-container {
+  background-color: #f7f7f7;
+  padding: 5% 0;
+  p {
+    color: #222;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .kinds-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .kind-item {
+      width: 100%;
+      max-width: 360px;
+      margin: 10px;
+      a {
+        display: flex;
+        justify-content: center;
+        &:hover {
+          text-decoration: none;
+        }
+        img {
+          width: 100%;
+          object-fit: cover;
+          &:hover {
+            -webkit-box-shadow: 0 20px 40px rgba(0, 1, 1, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 1, 1, 0.2);
+            -webkit-transition: 0.4s;
+            transition: all 0.4s ease-in-out;
+          }
+        }
+
+        h3 {
+          color: #4b81d3;
+          text-decoration: none;
+          font-size: 24px;
+          font-family: "Open Sans", sans-serif;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.svg-inline--fa.fa-w-12 {
+  width: 20px;
 }
