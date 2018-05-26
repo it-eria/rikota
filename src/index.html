@@ -26,6 +26,14 @@
 <div class="main-container">
     <div id="wrap-popup">
         <div id="fullscreen">
+            <div class="modal-info-content">
+                <div class="modal-info-content__content">
+                <h2>Залиште Ваші контактні дані</h2>
+                <p>Наш адміністратор перетелефонує Вам та запише Вас на прийом до відповідного лікаря, чи проконсультує
+                    стосовно будь-якого запитання!</p>
+                </div>
+
+            </div>
             <a href="#" class="close"><i class="fa fa-times"></i></a>
             <div class="form-wrap">
 
@@ -50,21 +58,31 @@
 
 
                     <div class="highlight">
-                        <button type="submit" class="subscribe-btn clicky button">Надіслати</button>
+                        <a class="subscribe-btn clicky button" href="#">Надіслати</a>
                     </div>
+
+
                 </form>
             </div>
 
         </div>
         <div class="header-container menu-scroll nav-up" id="navb">
+            <div class="top-line"></div>
             <div class="container">
                 <header class="dark flex-between">
-                    <a href="index.html"><img class="header-logotype" src="assets/images/logo-bronza.png" alt="img"/></a>
                     <div class="header-info">
 
-                        <p><img src="assets/images/phone_ico.png" alt="img"/> +380 93 170 30 99</p>
-                        <a class="clicky" href="#">Записатися на прийом</a>
+                        <p class="phone-header">+380 93 170 30 99</p>
+                        <a class="clicky" href="#"><i class="fa fa-phone" aria-hidden="true"></i> Замовити дзвінок</a>
+                        <div class="work-schedule">
+                            <p>Графік роботи</p>
+                            <p>Пн-Сб: 9:00 - 21:00</p>
+                            <p>Нд: Вихідний</p>
+                        </div>
                     </div>
+
+                    <a href="index.html"><img class="header-logotype" src="assets/images/logo-bronza.png"
+                                              alt="img"/></a>
                     <nav role="navigation">
                         <a href="javascript:void(0);" class="ic menu">
                             <span class="line"></span>
@@ -74,7 +92,7 @@
                         <a href="javascript:void(0);" class="ic close"></a>
                         <ul class="main-nav">
                             <li class="top-level-link">
-                                <a class="mega-menu" ><span>Послуги</span></a>
+                                <a class="mega-menu"><span>Послуги</span></a>
                                 <div class="sub-menu-block">
                                     <div class="row">
 
@@ -183,29 +201,31 @@
                     </form>
                 </div>
             </div>
+            <div class="bottom-line"></div>
         </div>
         <div class="description-container aos-init aos-animate" data-aos-duration="2100" data-aos="fade-up"
              style="background-image: url(assets/images/counter_bg-1.png)">
+            <img class="bg-triangle" src="assets/images/bg-triangle.png" alt="img"/>
             <div class="container flex-end">
                 <div class="counter-block">
-                    <h2>Клініка, якій довіряють</h2>
-                    <div class="counter">
-                        <span>На ринку</span>
-                        <p id="count1">0</p>
-                        <span>років</span>
-                    </div>
+                    <h2>Стоматологічна клініка, якій довіряють</h2>
+                    <div class="maxw-730">
+                        <div class="counter">
 
-                    <div class="counter">
-                        <span>Нас рекомендують</span>
-                        <p id="count2">0</p>
-                        <span>з 10-ти відвідувачів</span>
-                    </div>
-                    <div class="counter minw-276">
-                        <span>Обслуговуємо</span>
-                        <p><span id="count3">0</span>+</p>
-                        <span>пацієнтів</span>
-                    </div>
+                            <p id="count1">0</p>
+                            <span>На ринку років</span>
+                        </div>
+                        <div class="counter">
 
+                            <p id="count2">0</p>
+                            <span>Нас рекомендують з 10-ти відвідувачів</span>
+                        </div>
+                        <div class="counter minw-276">
+
+                            <p><span id="count3">0</span>+</p>
+                            <span>Обслуговуємо пацієнтів</span>
+                        </div>
+                    </div>
                     <div class="highlight">
                         <a class="subscribe-btn clicky button" href="#">Записатися на прийом</a>
                     </div>
@@ -217,6 +237,8 @@
         </div>
         <div class="achievement-container aos-init aos-animate" data-aos-duration="2200" data-aos="fade-up">
             <div class="container h2-default">
+                <img class="left-bg-gray-triangle" src="assets/images/left-bg-triangle.png" alt="img"/>
+                <img class="right-bg-gray-triangle" src="assets/images/right-bg-triangle.png" alt="img"/>
                 <h2 class="title-h2">Наші досягнення</h2>
                 <div class="achievement-slider">
                     <div class="achievement-item">
@@ -246,11 +268,15 @@
             </div>
         </div>
         <div class="services-container aos-init aos-animate" data-aos-duration="2100" data-aos="fade-up">
+            <div class="title-triangle">
+                <img src="assets/images/title-triangle.png" alt="img"/>
+                <!--<h2 class="title-h2">Наші послуги</h2>-->
+            </div>
             <div class="container h2-default">
-                <h2 class="title-h2">Послуги</h2>
+                <h2 class="title-h2">Наші послуги</h2>
                 <div class="services-wrap">
                     <div class="service-item">
-                        <img src="assets/images/impl.svg" alt="img"/>
+                        <img src="assets/images/1.png" alt="img"/>
                         <h3>Імплантація</h3>
                         <hr>
                         <p class="service-descr">Сучасна стоматологія переживає еру змін, винаходів, новинок та
@@ -259,7 +285,7 @@
                     </div>
 
                     <div class="service-item">
-                        <img src="assets/images/treatment_img_8.svg" alt="img"/>
+                        <img src="assets/images/1.png" alt="img"/>
                         <h3>Брекети</h3>
                         <hr>
                         <p class="service-descr">Установкою брекетів сьогодні вже нікого не здивуєш. Це основний
@@ -268,7 +294,7 @@
                         <a href="#">Читати далі <i class="fas fa-angle-double-right"></i></a>
                     </div>
                     <div class="service-item">
-                        <img src="assets/images/treatment_img_6.svg" alt="img"/>
+                        <img src="assets/images/1.png" alt="img"/>
                         <h3>Коронки</h3>
                         <hr>
                         <p class="service-descr">Зубні коронки – це ідеальний спосіб відновити первинну форму та функції
@@ -277,7 +303,7 @@
                     </div>
 
                     <div class="service-item">
-                        <img src="assets/images/treatment_img_7.svg" alt="img"/>
+                        <img src="assets/images/1.png" alt="img"/>
                         <h3>Естетична стоматологія</h3>
                         <hr>
                         <p class="service-descr">Новітні технології та кваліфікація фахівців дозволяють сучасній
@@ -286,7 +312,7 @@
                     </div>
 
                     <div class="service-item">
-                        <img src="assets/images/treatment_img_1.svg" alt="img"/>
+                        <img src="assets/images/1.png" alt="img"/>
                         <h3>Хірургічна стоматологія</h3>
                         <hr>
                         <p class="service-descr">Хірургічна стоматологія – один із розвинутих напрямків роботи нашої
@@ -295,7 +321,7 @@
                     </div>
 
                     <div class="service-item">
-                        <img src="assets/images/treatment_img_5.svg" alt="img"/>
+                        <img src="assets/images/1.png" alt="img"/>
                         <h3>Зубні протези</h3>
                         <hr>
                         <p class="service-descr">Приваблива посмішка – це запорука впевненості в собі! Трапляються
@@ -305,7 +331,7 @@
                     </div>
 
                     <div class="service-item">
-                        <img src="assets/images/treatment_img_4.svg" alt="img"/>
+                        <img src="assets/images/1.png" alt="img"/>
                         <h3>Дитяча стоматологія</h3>
                         <hr>
                         <p class="service-descr">Похід дитини до стоматолога – це важлива подія, особливо, якщо малюк
@@ -313,7 +339,7 @@
                         <a href="#">Читати далі <i class="fas fa-angle-double-right"></i></a>
                     </div>
                     <div class="service-item">
-                        <img src="assets/images/treatment_img_2.svg" alt="img"/>
+                        <img src="assets/images/1.png" alt="img"/>
                         <h3>Лікування</h3>
                         <hr>
                         <p class="service-descr">Здорові зуби та сяюча посмішка потребують постійної турботи та
@@ -327,32 +353,33 @@
             </div>
         </div>
         <div class="how-we-work-container aos-init aos-animate" data-aos-duration="2200" data-aos="fade-up">
+            <img class="bg-triangle" src="assets/images/bg-triangle.png" alt="img"/>
             <div class="container h2-default">
                 <h2 class="title-h2">Як ми працюємо</h2>
                 <div class="works-wrap">
                     <div class="we-work-item">
-                        <img src="assets/images/how_we_work_img_1.png" alt="img"/>
+                        <img src="assets/images/molekula.png" alt="img"/>
                         <p>Стоматологія світового рівня: новітні методики, найсучасніші обладнання та матеріали.</p>
                     </div>
 
                     <div class="we-work-item">
-                        <img src="assets/images/how_we_work_img_2.png" alt="img"/>
+                        <img src="assets/images/molekula.png" alt="img"/>
                         <p>Принцип "одних дверей" - весь спектр послуг в одній клініці.</p>
                     </div>
 
                     <div class="we-work-item">
-                        <img src="assets/images/how_we_work_img_3.png" alt="img"/>
+                        <img src="assets/images/molekula.png" alt="img"/>
                         <p>Турботливий підхід до кожного пацієнта.</p>
                     </div>
 
                     <div class="we-work-item">
-                        <img src="assets/images/how_we_work_img_4.png" alt="img"/>
+                        <img src="assets/images/molekula.png" alt="img"/>
                         <p>Комфортне лікування без болю та стресу.</p>
                     </div>
                 </div>
 
                 <div class="subscribe-wrap">
-                    <h3 class="h3-blue">Здорові зуби швидко та легко!</h3>
+
                     <div class="highlight">
                         <a class="subscribe-btn clicky button" href="#">Записатися на прийом</a>
                     </div>
@@ -363,7 +390,7 @@
             <div class="secure-container">
                 <div class="container blue-container">
                     <div class="secure-left-side">
-                        <img src="assets/images/guaranty_img.png" alt="img"/>
+                        <img src="assets/images/9.png" alt="img"/>
                     </div>
 
                     <div class="secure-right-side">
@@ -378,119 +405,151 @@
                     <!--   Testimonial 1 -->
                     <div class="single-testimonial">
                         <div class="testimonials-wrapper">
-                            <h4>Завжди хотіла мати гарну посмішку, бо з рівними зубками і почуваєш себе впевненіше, і
-                                самі
-                                зуби будуть здоровішими. Мені порекомендували звернутися у клініку Рікота, і я жодного
-                                разу
-                                не пошкодувала, що почала тут лікуватися. Уважний підхід, чіткість, турботливе ставлення
-                                до
-                                людей – усе це робить процес лікування навіть приємним. Я дуже задоволена результатом.
-                                Щиро
-                                дякую клініці та її чудовим працівникам. :)</h4>
+                            <div class="tetimonial-item">
+                                <h4>Завжди хотіла мати гарну посмішку, бо з рівними зубками і почуваєш себе впевненіше,
+                                    і
+                                    самі
+                                    зуби будуть здоровішими. Мені порекомендували звернутися у клініку Рікота, і я
+                                    жодного
+                                    разу
+                                    не пошкодувала, що почала тут лікуватися. Уважний підхід, чіткість, турботливе
+                                    ставлення
+                                    до
+                                    людей – усе це робить процес лікування навіть приємним. Я дуже задоволена
+                                    результатом.
+                                    Щиро
+                                    дякую клініці та її чудовим працівникам. :)</h4>
+                                <hr class="line-testimonials">
+                            </div>
                             <div class="testimonials-blob"></div>
                             <div class="testimonials-img"><img src="assets/images/Makarova-na-sait-100x100.jpg"></div>
                             <div class="testimonials-person-info">
-                                <p><b>Марина Макарова</b><br/>Менеджер</p>
+                                <p><span>Марина Макарова</span><br/>Менеджер</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="single-testimonial">
                         <div class="testimonials-wrapper">
-                            <h4>I chose Lviv and Rikota because I had some dental problems in USA and was offered
-                                extremely
-                                expensive treatment. I started surfing the Internet. When I came here I was pleasantly
-                                surprised with the care service and the latest equipment.</h4>
+                            <div class="tetimonial-item">
+                                <h4>I chose Lviv and Rikota because I had some dental problems in USA and was offered
+                                    extremely
+                                    expensive treatment. I started surfing the Internet. When I came here I was
+                                    pleasantly
+                                    surprised with the care service and the latest equipment.</h4>
+                                <hr class="line-testimonials">
+                            </div>
+
                             <div class="testimonials-blob"></div>
                             <div class="testimonials-img"><img src="assets/images/client_image_2-100x99.png"></div>
                             <div class="testimonials-person-info">
-                                <p><b>Richard Pahl</b><br/>Pensioner</p>
+                                <p><span>Richard Pahl</span><br/>Pensioner</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="single-testimonial">
                         <div class="testimonials-wrapper">
-                            <h4>Перший мій візит у клініку Рікота був у 2015 році, бо були проблеми з зубом. Перед тим
-                                довго
-                                вагалася і ходила на консультації у 4 різні стоматології. В Рікоті сподобалося
-                                найбільше. 🙂
-                                Зараз планую робити тут усі пломби. Лікарі просто молодці!</h4>
+                            <div class="tetimonial-item">
+                                <h4>Перший мій візит у клініку Рікота був у 2015 році, бо були проблеми з зубом. Перед
+                                    тим
+                                    довго
+                                    вагалася і ходила на консультації у 4 різні стоматології. В Рікоті сподобалося
+                                    найбільше. 🙂
+                                    Зараз планую робити тут усі пломби. Лікарі просто молодці!</h4>
+                                <hr class="line-testimonials">
+                            </div>
+
                             <div class="testimonials-blob"></div>
                             <div class="testimonials-img"><img src="assets/images/client_image_1-99x100.png"></div>
                             <div class="testimonials-person-info">
-                                <p><b>Олеся Песоцька</b><br/>Керівник туристичної фірми</p>
+                                <p><span>Олеся Песоцька</span><br/>Керівник туристичної фірми</p>
                             </div>
                         </div>
                     </div>
                     <!--   End Testimonials -->
                 </div>
-                <div class="highlight">
-                    <a class="subscribe-btn clicky button" href="#">Записатися на прийом</a>
+
+                <p class="text-center"><strong>Дізнайтесь приблизну вартість лікування!</strong></p>
+                <p class="text-center">Залиште Ваші контакти, ми Вам перетелефонуємо!</p>
+                <div class="testimonials-form">
+                    <input type="text" placeholder="Ім'я:"/>
+                    <input type="text" placeholder="Тел:"/>
+
+                    <div class="highlight">
+                        <a class="subscribe-btn clicky button" href="#">Дізнатися вартісь лікування</a>
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="additional-services-container aos-init aos-animate" data-aos-duration="2200" data-aos="fade-up">
+            <div class="title-triangle">
+                <img src="assets/images/additional-triangle.png" alt="img">
+            </div>
+
+
+            <img class="bg-triangle" src="assets/images/bg-triangle.png" alt="img"/>
             <div class="container h2-default">
                 <h2 class="title-h2">Додаткові сервіси</h2>
                 <div class="additional-wrapper">
                     <div class="additional-item">
-                        <img src="assets/images/kids-03.svg" alt="img"/>
+                        <img src="assets/images/10.png" alt="img"/>
                         <p>Безкоштовна парковка</p>
                     </div>
 
                     <div class="additional-item">
-                        <img src="assets/images/kids-04.svg" alt="img"/>
+                        <img src="assets/images/10.png" alt="img"/>
                         <p>Дитяча зона</p>
                     </div>
 
                     <div class="additional-item">
-                        <img src="assets/images/kids-01.svg" alt="img"/>
+                        <img src="assets/images/10.png" alt="img"/>
                         <p>Запис онлайн</p>
                     </div>
 
                     <div class="additional-item">
-                        <img src="assets/images/kids-06.svg" alt="img"/>
+                        <img src="assets/images/10.png" alt="img"/>
                         <p>Заправка для електромобілів</p>
                     </div>
 
                     <div class="additional-item">
-                        <img src="assets/images/music.svg" alt="img"/>
+                        <img src="assets/images/10.png" alt="img"/>
                         <p>Приємна музика</p>
                     </div>
 
                     <div class="additional-item">
-                        <img src="assets/images/wifi.svg" alt="img"/>
+                        <img src="assets/images/10.png" alt="img"/>
                         <p>Wifi</p>
                     </div>
 
                     <div class="additional-item">
-                        <img src="assets/images/kids-07.svg" alt="img"/>
+                        <img src="assets/images/10.png" alt="img"/>
                         <p>Ввічливий персонал</p>
                     </div>
 
                     <div class="additional-item">
-                        <img src="assets/images/kids-08.svg" alt="img"/>
+                        <img src="assets/images/10.png" alt="img"/>
                         <p>Комфортні зали очікування</p>
                     </div>
 
                     <div class="additional-item">
-                        <img src="assets/images/kids-09.svg" alt="img"/>
+                        <img src="assets/images/10.png" alt="img"/>
                         <p>Зручний 6-денний робочий графік</p>
                     </div>
 
                     <div class="additional-item">
-                        <img src="assets/images/kids-10.svg" alt="img"/>
+                        <img src="assets/images/10.png" alt="img"/>
                         <p>Індивідуальні шафки для особистих речей пацієнтів</p>
                     </div>
 
                     <div class="additional-item">
-                        <img src="assets/images/kids-11.svg" alt="img"/>
+                        <img src="assets/images/10.png" alt="img"/>
                         <p>Подарунковий сертифікати</p>
                     </div>
 
                     <div class="additional-item">
-                        <img src="assets/images/online.svg" alt="img"/>
+                        <img src="assets/images/10.png" alt="img"/>
                         <p>Оплата карткою та готівкою</p>
                     </div>
 
@@ -503,18 +562,30 @@
             </div>
         </div>
         <div class="gallery-container aos-init aos-animate" data-aos-duration="2100" data-aos="fade-up">
-            <div class="container h2-default">
-                <h2 class="title-h2">Галерея</h2>
+            <div class="h2-default">
+                <h2 class="title-h2-style">Галерея</h2>
+            </div>
+            <div class="container ">
+
                 <div class="gallery-slider">
-                    <div class="slider slider-for">
-                        <div><img src="assets/images/Stomatolohichna-clinika-Rikota-foto-3-970x526.jpg" alt="img"/>
-                        </div>
-                        <div><img src="assets/images/Stomatolohichna-clinika-Rikota-foto-4-966x544.jpg" alt="img"/>
-                        </div>
-                        <div><img src="assets/images/Stomatolohichna-clinika-Rikota-foto-6-1-921x544.jpg" alt="img"/>
-                        </div>
-                        <div><img src="assets/images/Stomatolohichna-clinika-Rikota-foto-7-970x534.jpg" alt="img"/>
-                        </div>
+                    <!--<div class="slider slider-for">-->
+                    <!--<div><img src="assets/images/Stomatolohichna-clinika-Rikota-foto-3-970x526.jpg" alt="img"/>-->
+                    <!--</div>-->
+                    <!--<div><img src="assets/images/Stomatolohichna-clinika-Rikota-foto-4-966x544.jpg" alt="img"/>-->
+                    <!--</div>-->
+                    <!--<div><img src="assets/images/Stomatolohichna-clinika-Rikota-foto-6-1-921x544.jpg" alt="img"/>-->
+                    <!--</div>-->
+                    <!--<div><img src="assets/images/Stomatolohichna-clinika-Rikota-foto-7-970x534.jpg" alt="img"/>-->
+                    <!--</div>-->
+                    <!--<div><img src="assets/images/7-970x544.jpg" alt="img"/></div>-->
+                    <!--<div><img src="assets/images/6-970x540.jpg" alt="img"/></div>-->
+                    <!--<div><img src="assets/images/5-970x526.jpg" alt="img"/></div>-->
+                    <!--<div><img src="assets/images/4-970x544.jpg" alt="img"/></div>-->
+                    <!--<div><img src="assets/images/3-970x534.jpg" alt="img"/></div>-->
+                    <!--<div><img src="assets/images/2-970x526.jpg" alt="img"/></div>-->
+                    <!--<div><img src="assets/images/1-966x544.jpg" alt="img"/></div>-->
+                    <!--</div>-->
+                    <div class="slider gallery">
                         <div><img src="assets/images/7-970x544.jpg" alt="img"/></div>
                         <div><img src="assets/images/6-970x540.jpg" alt="img"/></div>
                         <div><img src="assets/images/5-970x526.jpg" alt="img"/></div>
@@ -523,27 +594,17 @@
                         <div><img src="assets/images/2-970x526.jpg" alt="img"/></div>
                         <div><img src="assets/images/1-966x544.jpg" alt="img"/></div>
                     </div>
-                    <div class="slider slider-nav">
-                        <div><img src="assets/images/Stomatolohichna-clinika-Rikota-foto-3-188x102.jpg" alt="img"/>
-                        </div>
-                        <div><img src="assets/images/Stomatolohichna-clinika-Rikota-foto-4-188x102.jpg" alt="img"/>
-                        </div>
-                        <div><img src="assets/images/Stomatolohichna-clinika-Rikota-foto-6-1-188x102.jpg" alt="img"/>
-                        </div>
-                        <div><img src="assets/images/Stomatolohichna-clinika-Rikota-foto-7-188x102.jpg" alt="img"/>
-                        </div>
-                        <div><img src="assets/images/7-188x102.jpg" alt="img"/></div>
-                        <div><img src="assets/images/6-188x102.jpg" alt="img"/></div>
-                        <div><img src="assets/images/5-188x102.jpg" alt="img"/></div>
-                        <div><img src="assets/images/4-188x102.jpg" alt="img"/></div>
-                        <div><img src="assets/images/3-188x102.jpg" alt="img"/></div>
-                        <div><img src="assets/images/2-188x102.jpg" alt="img"/></div>
-                        <div><img src="assets/images/1-188x102.jpg" alt="img"/></div>
-                    </div>
                 </div>
             </div>
         </div>
         <div class="about-container aos-init aos-animate" data-aos-duration="2200" data-aos="fade-up">
+            <div class="title-triangle">
+                <img src="assets/images/title-triangle.png" alt="img">
+            </div>
+
+            <div class="title-triangle-bottom">
+                <img src="assets/images/footer-triangle.png" alt="img">
+            </div>
             <div class="container h2-default">
                 <h2 class="title-h2">Стоматологічна клініка Рікота у Львові</h2>
                 <p>Обираючи приватну стоматологічну клініку «Рікота», ви обираєте досвід майже 30-річної стоматологічної
@@ -560,16 +621,18 @@
                     вашу
                     посмішку бездоганною.</p>
                 <p><a href="#">Читати далі</a></p>
-                <div class="highlight">
+                <div class="highlight bottom-style-about">
                     <a class="subscribe-btn clicky button" href="#">Записатися на прийом</a>
                 </div>
             </div>
         </div>
         <div class="footer-container">
+
             <div class="container">
                 <div class="footer-info-wrapper">
                     <div class="footer-item-block">
-                        <a href="index.html"><img class="footer-logo" src="assets/images/logo-bronza.png" alt="img"/></a>
+                        <a href="index.html"><img class="footer-logo" src="assets/images/logo-bronza.png"
+                                                  alt="img"/></a>
                         <p>© Стоматологічна клініка «Rikota», 1990-2018</p>
                         <p><a href="#">Політика конфіденційності</a></p>
                         <p><a href="#">Згода з розсилкою</a></p>

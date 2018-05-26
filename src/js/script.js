@@ -129,7 +129,7 @@ $('.achievement-slider').slick({
 $(function() {
     $('.owl-carousel.testimonial-carousel').owlCarousel({
         nav: true,
-        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+        navText: ['<img src="assets/images/left-slider-arrow.png"', '<img src="assets/images/right-slider-arrow.png"'],
         dots: false,
         loop:true,
         autoplay:true,
@@ -148,23 +148,22 @@ $(function() {
 });
 
 
-$('.slider-for').slick({
-    slidesToShow: 1,
+// $('.slider-for').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: false,
+//     fade: true,
+//     asNavFor: '.slider-nav'
+// });
+$('.gallery').slick({
+    slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav'
-});
-$('.slider-nav').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: false,
+    // asNavFor: '.slider-for',
+    dots: true,
     focusOnSelect: true,
     autoplay: true,
     autoplaySpeed: 2500,
     responsive: [
-
         {
             breakpoint: 992,
             settings: {
@@ -187,7 +186,6 @@ $('.slider-nav').slick({
             }
         }
     ]
-
 });
 
 
