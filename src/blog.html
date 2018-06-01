@@ -26,6 +26,14 @@
 <div class="main-container">
     <div id="wrap-popup">
         <div id="fullscreen">
+            <div class="modal-info-content">
+                <div class="modal-info-content__content">
+                    <h2>Залиште Ваші контактні дані</h2>
+                    <p>Наш адміністратор перетелефонує Вам та запише Вас на прийом до відповідного лікаря, чи проконсультує
+                        стосовно будь-якого запитання!</p>
+                </div>
+
+            </div>
             <a href="#" class="close"><i class="fa fa-times"></i></a>
             <div class="form-wrap">
 
@@ -48,20 +56,33 @@
                         <i class="far fa-envelope"></i>
                     </label>
 
-                    <button type="submit" class="subscribe-btn">Надіслати</button>
+
+                    <div class="highlight">
+                        <a class="subscribe-btn clicky button" href="#">Надіслати</a>
+                    </div>
+
+
                 </form>
             </div>
 
         </div>
         <div class="header-container menu-scroll nav-up" id="navb">
+            <div class="top-line"></div>
             <div class="container">
                 <header class="dark flex-between">
+                    <div class="header-info">
+
+                        <p class="phone-header">+380 93 170 30 99</p>
+                        <a class="clicky" href="#"><i class="fa fa-phone" aria-hidden="true"></i> Замовити дзвінок</a>
+                        <div class="work-schedule">
+                            <p>Графік роботи</p>
+                            <p>Пн-Сб: 9:00 - 21:00</p>
+                            <p>Нд: Вихідний</p>
+                        </div>
+                    </div>
+
                     <a href="index.html"><img class="header-logotype" src="assets/images/logo-bronza.png"
                                               alt="img"/></a>
-                    <div class="header-info">
-                        <p><img src="assets/images/phone_ico.png" alt="img"/> +380 93 170 30 99</p>
-                        <a class="clicky" href="#">Записатися на прийом</a>
-                    </div>
                     <nav role="navigation">
                         <a href="javascript:void(0);" class="ic menu">
                             <span class="line"></span>
@@ -166,19 +187,21 @@
                             </li>
 
                             <li class="top-level-link" id="search-item"><a href="#" id="searchtoggl"><i
-                                    class="fa fa-lg fa-search"></i></a></li>
+                                    class="fa fa-search fa-lg"></i></a></li>
                         </ul>
 
                     </nav>
 
                 </header>
                 <div id="searchbar" class="clearfix">
-                    <form id="searchform" method="get" action="">
+                    <form id="searchform" method="get" action="searchpage.php">
                         <button type="submit" id="searchsubmit" class="fa fa-search fa-4x"></button>
                         <input type="search" name="s" id="s" placeholder="Пошук..." autocomplete="off">
+
                     </form>
                 </div>
             </div>
+            <div class="bottom-line"></div>
         </div>
         <div class="breadcrumbs-container aos-init aos-animate" data-aos-duration="2100" data-aos="fade-up">
             <div class="container">
@@ -298,6 +321,7 @@
             </div>
         </div>
         <div class="footer-container">
+
             <div class="container">
                 <div class="footer-info-wrapper">
                     <div class="footer-item-block">

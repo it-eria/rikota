@@ -1718,7 +1718,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
   outline: 0;
   padding: 0;
   height: 45px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "GOTHIC";
   font-size: 16px;
   font-weight: 600;
   color: #c39e47;
@@ -2155,7 +2155,7 @@ a.plug {
     li {
       list-style-type: none;
       display: inline-block;
-      color: #4b81d3;
+      color: #d4a23a;
       font-size: 18px;
 
       &:last-child {
@@ -2189,12 +2189,15 @@ a.plug {
   .content-block {
     h1 {
       color: #222;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 64px;
+      font-size: 48px;
       font-weight: 400;
+      text-align: center;
+      border-top: 1px solid #d4a23a;
+      border-bottom: 1px solid #d4a23a;
       line-height: 58px;
-      margin-top: 0;
+      margin-top: 20px;
       margin-bottom: 29px;
+      padding: 15px 0;
     }
 
     p {
@@ -2248,7 +2251,7 @@ a.plug {
     tr {
       border-bottom: 1px solid #ccc;
       th {
-        color: #4b81d3;
+        color: #d4a23a;
         font-size: 18px;
         line-height: 60px;
         font-weight: 700;
@@ -2312,7 +2315,7 @@ a.plug {
         }
 
         h3 {
-          color: #4b81d3;
+          color: #d4a23a;
           text-decoration: none;
           font-size: 24px;
           font-family: "Open Sans", sans-serif;
@@ -2339,7 +2342,7 @@ a.plug {
   }
 
   .small-image_block {
-    background: #4b81d3;
+    background: #d4a23a;
     width: 150px;
     height: 150px;
     padding: 20px 0;
@@ -2483,6 +2486,13 @@ a.plug {
       .subscribe-btn-medium {
         font-size: 18px;
         margin-top: 0;
+        border-radius: 10px;
+        line-height: 50px;
+        outline: none;
+        &:focus {
+          color: #000;
+          text-decoration: none;
+        }
       }
       .subscribe-btn {
 
@@ -2491,23 +2501,30 @@ a.plug {
 
     .main-content-blog {
       h1 {
+       
         color: #222;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 64px;
+        font-size: 48px;
         font-weight: 400;
+        text-align: center;
+        border-top: 1px solid #d4a23a;
+        border-bottom: 1px solid #d4a23a;
         line-height: 58px;
         margin-top: 20px;
         margin-bottom: 29px;
+        padding: 15px 0;
       }
 
       h2 {
         color: #222;
-        font-family: 'Open Sans', sans-serif;
         font-size: 48px;
-        font-weight: 600;
-        line-height: 52px;
-        margin-top: 0;
-        margin-bottom: 34px;
+        font-weight: 400;
+        text-align: center;
+        border-top: 1px solid #d4a23a;
+        border-bottom: 1px solid #d4a23a;
+        line-height: 58px;
+        margin-top: 20px;
+        margin-bottom: 29px;
+        padding: 15px 0;
       }
 
       .blog-cat {
@@ -2517,7 +2534,7 @@ a.plug {
           height: 40px;
           border: 2px solid #cdcdcd;
           color: #222;
-          font-family: 'Open Sans', sans-serif;
+          font-family: "GOTHIC";
           font-size: 16px;
           text-transform: uppercase;
           line-height: 36px;
@@ -2528,11 +2545,12 @@ a.plug {
           -webkit-transition: .4s;
           transition: .4s;
           &:hover {
-            background: #4b81d3;
-            color: #fff;
-            border-color: #4b81d3;
-            -webkit-transition: .4s;
-            transition: .4s;
+            background: #fecc00;
+            background: -webkit-gradient(linear,left top,right top,color-stop(0,#fecc00),color-stop(34%,#f5f6db),to(#edb230));
+            background: linear-gradient(to right,#fecc00 0,#f5f6db 34%,#edb230 100%);
+            color: #000;
+            border-color: #fff;
+
           }
         }
       }
@@ -2540,7 +2558,7 @@ a.plug {
       .article_block {
         padding-top: 40px;
         padding-bottom: 40px;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #d4a23a;
         .image_block {
           float: left;
           width: 100%;
@@ -2566,7 +2584,7 @@ a.plug {
           float: left;
 
           h3 {
-            font-family: 'Open Sans', sans-serif;
+            font-family: "GOTHIC";
             line-height: 42px;
             margin-bottom: 15px;
             font-size: 32px;
@@ -2578,7 +2596,7 @@ a.plug {
               transition: .4s;
               font-weight: 600;
               &:hover {
-                color: #4b81d3;
+                color: #d4a23a;
                 text-decoration: none;
               }
 
@@ -2593,7 +2611,7 @@ a.plug {
               margin-right: 40px;
               display: inline-block;
               span {
-                font-family: 'Open Sans', sans-serif;
+                font-family: "GOTHIC";
                 color: #999;
                 font-size: 14px;
                 display: block;
@@ -2608,7 +2626,7 @@ a.plug {
             .views_block {
               display: inline-block;
               span {
-                font-family: 'Open Sans', sans-serif;
+                font-family: "GOTHIC";
                 color: #999;
                 font-size: 18px;
                 background: url(../images/eye_ico.png) no-repeat left center;
@@ -2621,14 +2639,14 @@ a.plug {
 
           p {
             color: #222;
-            font-family: 'Open Sans', sans-serif;
+            font-family: "GOTHIC";
             font-size: 18px;
             margin-bottom: 15px;
           }
 
           a.read-more {
-            color: #4b81d3;
-            font-family: 'Open Sans', sans-serif;
+            color: #d4a23a;
+            font-family: "GOTHIC";
             font-weight: 400;
             text-decoration: none;
             font-size: 18px;
@@ -2639,8 +2657,8 @@ a.plug {
               display: block;
               width: 8px;
               height: 8px;
-              border-right: 2px solid #4b81d3;
-              border-bottom: 2px solid #4b81d3;
+              border-right: 2px solid #d4a23a;
+              border-bottom: 2px solid #d4a23a;
               position: absolute;
               right: 0;
               top: 8px;
@@ -2667,7 +2685,7 @@ a.plug {
       border: none;
       border-bottom: 2px solid #ccc;
       outline: 0;
-      font-family: 'Open Sans', sans-serif;
+      font-family: "GOTHIC";
       font-size: 18px;
       font-style: italic;
     }
@@ -2692,7 +2710,7 @@ a.plug {
   span {
     color: #222;
     font-size: 24px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "GOTHIC";
     font-weight: 700;
     margin-bottom: 15px;
     display: block;
@@ -2725,14 +2743,14 @@ a.plug {
 
 
   &.top {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid #d4a23a;
     padding-top: 0;
     padding-bottom: 25px;
     margin-bottom: 40px;
   }
 
   &.bottom {
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid #d4a23a;
     margin-top: 40px;
     padding-top: 25px;
     padding-bottom: 0;
@@ -2741,7 +2759,7 @@ a.plug {
     margin-right: 40px;
     display: inline-block;
     span {
-      font-family: 'Open Sans', sans-serif;
+      font-family: "GOTHIC";
       color: #999;
       background: url(../images/clock_ico.png) no-repeat left center;
       font-size: 18px;
@@ -2754,7 +2772,7 @@ a.plug {
   .views_block {
     display: inline-block;
     span {
-      font-family: 'Open Sans', sans-serif;
+      font-family: "GOTHIC";
       color: #999;
       background: url(../images/eye_ico.png) no-repeat left center;
       font-size: 18px;
@@ -2788,14 +2806,16 @@ a.plug {
 }
 
 .subscribe-form_block {
-  background-color: #f0f0f0;
+  background-image: url(../images/big-bg-rhomb.png);
   padding: 10px;
+  -webkit-box-shadow: 0 0 4px #ccc;
   box-shadow: 0 0 4px #ccc;
   margin: 40px 0;
+  background-size: 100%;
   display: block;
   h3 {
     color: #222;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "GOTHIC";
     font-size: 32px;
     font-weight: 600;
     line-height: 48px;
@@ -2928,4 +2948,17 @@ a.plug {
   }
 
 
+}
+
+.title-modern {
+  color: #222;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  border-top: 1px solid #d4a23a;
+  border-bottom: 1px solid #d4a23a;
+  line-height: 58px;
+  margin-top: 20px;
+  margin-bottom: 29px;
+  padding: 15px 0;
 }
