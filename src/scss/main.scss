@@ -1453,7 +1453,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
   background-image: url(../images/big-bg-rhomb.png);
   background-size: cover;
   .h2-default {
-    margin-top: 60px;
+    
   }
   .gallery-slider {
     position: relative;
@@ -1948,7 +1948,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
 @media only screen and (max-width: 720px) {
 
   .modal-info-content {
-    margin-top: 25% !important;
+    margin-top: 14%!important;
   }
   .modal-info-content {
     background-image: none !important;
@@ -2030,8 +2030,8 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
     a {
       svg {
         position: fixed;
-        top: 0px;
-        right: 4px;
+        top: 10px;
+        right: 15px;
         color: #c39e47;
         opacity: 1;
         font-size: 29px;
@@ -2488,6 +2488,20 @@ a.plug {
 }
 
 @media screen and (max-width: 767px){
+
+  #wrap-popup #fullscreen .form-wrap {
+    margin: 30px auto;
+  }
+
+  #wrap-popup #fullscreen .modal-window {
+    max-height: 655px;
+  }
+
+  .form-subscription {
+    .subscribe-btn{
+      margin-top: 20px;
+    }
+  }
 
   .service-price-container, .kind-of-service-container {
     .title-h2 {
