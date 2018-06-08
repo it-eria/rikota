@@ -396,8 +396,8 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
     opacity: 1.0;
   }
 
-  .sub-menu-block {
-    padding: 0 30px;
+  .sub-menu-block, .mega-menu, .top-level-link {
+    padding: 0 20px !important;
   }
   .banners-area {
     padding-bottom: 0px;
@@ -1744,6 +1744,24 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
 
 @media only screen and (max-width: 660px) {
 
+  .services-container .services-wrap .service-item {
+    text-align: center;
+    background-image: url(../images/item-bg-rhomb.png);
+    padding: 100px 10px 80px 10px !important;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    -webkit-box-shadow: 5px 5px 10px #ccc;
+    box-shadow: 10px 15px 15px #ccc;
+    width: 100%;
+    position: relative;
+    max-width: 400px !important;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: 20px 10px !important;
+  }
+
   .testimonials-form {
     .highlight {
       max-width: none;
@@ -1767,7 +1785,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
   }
 
   .how-we-work-container {
-    padding: 12% 0 14%;
+    padding: 5% 0 14%;
   }
 
   .services-container h2 {
@@ -1775,7 +1793,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
   }
 
   .achievement-container {
-    padding: 12% 0;
+    padding: 5% 0;
   }
   .footer-container {
     .footer-info-wrapper {
@@ -2470,6 +2488,34 @@ a.plug {
 }
 
 @media screen and (max-width: 767px){
+
+  .service-price-container, .kind-of-service-container {
+    .title-h2 {
+      margin-bottom: 30px;
+    }
+  }
+  .about-container {
+    .h2-default {
+      .title-h2 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .title-h2-style {
+    padding: 15px 0!important;
+    margin-bottom: 30px !important;
+  }
+
+  .testimonials-container {
+    .mtop-70 {
+      margin-top: 30px;
+      .title-h2 {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
   .about-container {
     padding: 5% 0 15%;
   }
@@ -2481,6 +2527,8 @@ a.plug {
     bottom: 0px!important;
     margin-top: 0px !important;
     position: relative !important;
+    left: auto !important;
+    transform: translate(0%) !important;
   }
 
   .title-triangle-bottom {
@@ -2509,6 +2557,7 @@ a.plug {
 
   .h2-default h2, .how-we-work-container .h2-default h2 {
     font-size: 36px;
+    margin-bottom: 0;
   }
 
   .achievement-container .achievement-item h2 {
@@ -2533,6 +2582,7 @@ a.plug {
 
   .achievement-container h2 {
     margin-top: 0;
+    margin-bottom: 20px;
   }
 
   .services-container h2 {
@@ -3142,3 +3192,11 @@ a.plug {
   }
 
 }
+
+.sub-menu-head {
+  color: #d4a23a;
+  a {
+    color: #d4a23a;
+  }
+}
+
