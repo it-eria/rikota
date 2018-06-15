@@ -2072,7 +2072,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
       background-size: contain;
       width: 100%;
       background-repeat: no-repeat;
-      height: 90%;
+      height: auto;
       max-height: 700px;
       background-color: #fff;
       z-index: 99999999999999;
@@ -2106,6 +2106,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
       min-height: 300px;
       max-width: 600px;
       min-width: 320px;
+      padding: 0 60px;
 
       .form-wrap form label {
         display: none;
