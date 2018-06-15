@@ -117,7 +117,7 @@ a {
 
 ul.main-nav > li > a {
   display: block;
-  padding: 12px 5px;
+  padding: 12px 16px;
   position: relative;
   font-family: "GOTHIC";
   cursor: pointer;
@@ -731,15 +731,18 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
 }
 
 
+
+
 .title-h2 {
   color: #222;
   font-size: 48px;
   line-height: 64px;
   text-align: center;
-  margin-top: 0;
+  margin-top: 40px;
   position: relative;
-  top: -55px;
-  margin-bottom: 45px;
+  top: 0;
+  margin-bottom: 18px;
+
   font-family: "GOTHIC";
 }
 
@@ -769,23 +772,61 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
   }
 }
 
-.title-triangle {
+.title-triangle-footer {
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
+  min-height: 230px;
   z-index: 0;
   img {
     width: 100%;
     object-fit: cover;
     top: -1px;
-    min-height: 190px;
+    min-height: 160px;
+    position: absolute;
+  }
+
+  h5 {
     position: relative;
+    margin: 0 auto;
+    display: block;
+    font-family: "GOTHIC";
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.title-triangle {
+  width: 100%;
+  position: relative;
+  top: 0;
+  min-height: 230px;
+  z-index: 0;
+  img {
+    width: 100%;
+    object-fit: cover;
+    top: -1px;
+    min-height: 160px;
+    position: absolute;
+  }
+
+  h5 {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    font-family: "GOTHIC";
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 18px;
   }
 }
 
 .services-container {
   background-color: #f0f0f0;
-  padding: 5% 0;
+  padding: 0 0 5%;
   .services-wrap {
     display: flex;
     justify-content: center;
@@ -1330,7 +1371,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
 }
 
 .additional-services-container {
-  padding: 5% 0 15%;
+  padding: 0 0 15%;
   background-image: url('../images/counter_bg-1.png');
   background-size: cover;
   background-attachment: fixed;
@@ -1453,7 +1494,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
   background-image: url(../images/big-bg-rhomb.png);
   background-size: cover;
   .h2-default {
-    
+
   }
   .gallery-slider {
     position: relative;
@@ -1509,7 +1550,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
 }
 
 .about-container {
-  padding: 5% 0 15%;
+  padding: 5% 0 6%;
   font-size: 16px;
 
   h2 {
@@ -1537,10 +1578,11 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
 
 .footer-container {
   background-color: #1d1d1b;
+  background-image: url(../images/footer-bg.jpg);
 
 
   position: relative;
-  padding: 20px 0 5px;
+  padding: 0 0 5px;
   .footer-info-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -1839,6 +1881,18 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
 
 @media only screen and (max-width: 480px) {
 
+  .white-title {
+    color: #fff !important;
+  }
+
+  .title-triangle {
+    min-height: auto;
+    img {
+      display: none;
+    }
+
+  }
+
   .subscribe-btn {
     font-size: 20px;
   }
@@ -2010,22 +2064,23 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
     background-color: rgba(0, 0, 0, 0.7);
 
     .modal-window {
-
       position: fixed;
       top: 50%;
       left: 50%;
       overflow: scroll;
       background-image: url(../images/item-bg-rhomb.png);
-      background-size: cover;
+      background-size: contain;
       width: 100%;
+      background-repeat: no-repeat;
       height: 90%;
       max-height: 700px;
       background-color: #fff;
       z-index: 99999999999999;
       padding: 0;
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
       margin: 0;
-      max-width: 400px;
+      max-width: 600px;
     }
     a {
       svg {
@@ -2362,7 +2417,7 @@ a.plug {
 
 .kind-of-service-container {
   background-color: #f7f7f7;
-  padding: 5% 0;
+  padding: 0 0 5%;
   p {
     color: #222;
     font-weight: 300;
@@ -2996,9 +3051,11 @@ a.plug {
     .work-days-info-btn {
       color: #000;
       border: none;
-      text-decoration: underline;
+      max-width: 127px;
+      text-decoration: none;
       padding: 0;
-      margin: 0;
+      font-size: 12px;
+      margin: 0 10px;
       &:hover {
         background-color: #fff;
         color: #000;
@@ -3052,9 +3109,11 @@ a.plug {
   display: table;
   width: 100%;
   max-width: 360px;
-  bottom: 10px;
+  bottom: auto;
   left: 50%;
+  top: 25px;
   margin: 0 auto;
+  -webkit-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -3151,9 +3210,7 @@ a.plug {
 }
 
 @media only screen and (max-width: 991px) {
-  .white-title {
-    color: #fff !important;
-  }
+
 
   .h2-default h2 {
     top: 0;
@@ -3186,9 +3243,7 @@ a.plug {
     display: none !important;
   }
 
-  .title-triangle {
-    display: none;
-  }
+
 
   .footer-container {
     .footer-info-wrapper {
@@ -3214,3 +3269,306 @@ a.plug {
   }
 }
 
+
+
+body .wpml-ls-legacy-list-horizontal a {
+  padding: 0 4px;
+  color: #333;
+}
+
+ul.main-nav > li > a {
+  padding: 5px;
+}
+
+.gallery .slick-slide img {
+  object-fit: cover;
+  height: 280px;
+}
+
+ul.main-nav > li > a.mega-menu > span:after {
+  margin-left: 5px;
+}
+
+.blog-sidebar {
+  padding: 0;
+}
+
+.blog-content {
+  margin-top: 30px;
+}
+
+.follow-us_block {
+  margin: 0;
+}
+
+.blog-container .blog-content .main-content-blog h2 {
+
+  margin-top: 0;
+}
+
+.blog-content {
+  padding-bottom: 40px;
+}
+
+.how-we-work-container .h2-default h2, .h2-default h2 {
+  margin-bottom: 0;
+}
+
+.title-h2-triangle {
+  color: #222;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  margin-top: 0;
+  position: relative;
+  top: -40px;
+  margin-bottom: 80px;
+  font-family: 'GOTHIC';
+}
+
+
+.gallery-container .gallery-slider {
+  margin-top: 40px;
+}
+
+.desctop-language {
+  display: block;
+  z-index: 10;
+}
+
+.mobile-language {
+  display: none;
+}
+
+#wrap-popup #fullscreen .modal-window {
+  overflow-x: hidden;
+}
+
+#wrap-popup #fullscreen a svg {
+  font-size: 16px;
+}
+
+.work-schedule p .work-days-info-btn {
+  width: 130px;
+}
+
+ul.main-nav>li {
+  border: 1px solid transparent;
+}
+
+.current-menu-item > a {
+  color: #d4a23a !important;
+  font-weight: 600;
+
+}
+
+ul.main-nav>li a:hover {
+  background-color: transparent;
+  color: #d4a23a;
+  transition: color .1s ease-in-out;
+}
+
+
+ul.main-nav>li:hover {
+  background-color: transparent;
+
+}
+
+
+.mobile-img {
+  display: none;
+
+}
+
+.service-description-container {
+  padding: 1% 0;
+}
+
+.breadcrumbs a {
+  color: #000;
+}
+
+.title-h2 {
+  top: 0;
+}
+
+.testimonial-carousel {
+
+  margin: 20px auto 75px;
+}
+
+.testimonial-carousel {
+
+  margin: 20px auto 75px;
+}
+
+
+@media screen and (max-width: 1200px){
+  .mobile-language {
+    display: block;
+  }
+
+  .mobile-language .wpml-ls-legacy-list-horizontal a span {
+    color: #fff;
+    font-size: 16px;
+  }
+  .mobile-language .wpml-ls-legacy-list-horizontal ul {
+    padding: 0 13px;
+  }
+
+
+
+  .desctop-language {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 992px){
+
+  .service-price-container .rikota-table tbody td {
+    color: #222;
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  .mobile-img {
+    display: block;
+    position: fixed;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .video-container {
+    display: none;
+
+  }
+
+
+  .title-h2-triangle {
+    top: 0;
+    margin-bottom: 0;
+  }
+
+  .services-container, .achievement-container {
+    padding: 2% 0;
+  }
+
+  .how-we-work-container {
+    padding: 2% 0 14%;
+  }
+
+  .testimonials-container > .mtop-70 {
+    margin-top: 0;
+  }
+
+  .testimonial-carousel {
+    margin: 25px auto 50px;
+  }
+
+  .additional-services-container {
+    padding: 2% 0 10%;
+  }
+
+  .achievement-slider {
+    margin-top: 25px;
+  }
+
+  .title-h2-style {
+    padding: 0;
+  }
+
+  .about-container {
+    padding: 2% 0 23%;
+  }
+
+
+
+}
+
+@media screen and (max-width: 768px){
+  .services-container h2, .title-h2-triangle {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 35px;
+  }
+
+  .gallery-container .gallery-slider {
+    margin: 0 auto 35px;
+  }
+
+  .gallery-container {
+    padding: 0 0 2%;
+  }
+
+  .about-container {
+    padding: 2% 0 8%;
+  }
+}
+
+@media screen and (max-width: 480px){
+
+  .service-price-container .subscribe-btn {
+    margin-top: 0;
+  }
+
+  .service-price-container .rikota-table tbody td {
+    line-height: 28px;
+  }
+  .how-we-work-container .h2-default h2, .services-container h2, .title-h2-triangle {
+    line-height: 40px;
+  }
+
+
+  .additional-services-container h2 {
+    margin-top: 0;
+  }
+}
+.sub-menu-block ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sub-menu-list > li > a{
+  ont-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #d4a23a;
+  margin: 0;
+  text-align: left;
+}
+.sub-menu-list > li:nth-child(4),.sub-menu-list > li:nth-child(7){
+  clear: both;
+  content: '';
+}
+.sub-menu-list ul.sub-menu{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+  list-style-type: none;
+  padding-left: 0;
+  display: block;
+}
+.sub-menu-list ul.sub-menu li{
+  padding: 2px 0;
+  text-align: left;
+}
+.sub-menu-list ul.sub-menu a{
+  font-size: 14px;
+  color: #666;
+}
+.wpml-ls-legacy-list-horizontal .wpml-ls-item.wpml-ls-current-language a{
+  font-weight: 600;
+  color: #fecc00;
+}
+
+.about-container{
+  font-size: 14px;
+}
+.title-h2-triangle,.title-h2{
+  font-size: 40px;
+}
